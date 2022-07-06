@@ -34,6 +34,8 @@ app.get("/",(req,res)=>{
     res.json({massage:"Welcome to My API"});
 });
 
+require("./app/routes/factures.routes.js")(app);
+require("./app/routes/admin.routes")(app);
 
 //listen to requests
 app.listen(3000,()=>{
