@@ -83,7 +83,7 @@ exports.update = (req, res) => {
   Facture.findByIdAndUpdate(
     req.params.factureId,
     {
-      matricule: req.body.matricule,
+      fullName: req.body.fullName, 
       montant: req.body.montant,
       dates: req.body.dates,
       datef: req.body.datef,
